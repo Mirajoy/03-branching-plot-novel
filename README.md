@@ -33,3 +33,5 @@ The grading criteria will be as follows:
 * [2] Adds interesting features (beyond the scope of the assignment)
 
 20 points total
+
+I tried to make a story about a friend making an unknown project
