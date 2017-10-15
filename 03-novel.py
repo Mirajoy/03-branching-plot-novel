@@ -42,9 +42,7 @@ def basement():
             inventory["tv_remote"]=1        
             continue
         if answer_b==("6"):
-            print("fcgvh")
-            #laundry_room()
-            continue
+            laundry_room()
         if answer_b==("7"):
             print("yjhb")
             #storage_room()
@@ -73,7 +71,13 @@ def talking_dennis():
     if convo["speak"]>=4:
         print("Sorry, I don't have anything else to help you.'\n")
         basement()
-        
+ 
+def laundry_room():
+    print("You are in the laundry room. From here, you can see the washer, dryer, and cleaning supplies.\n1 - Inspect washer\n2 - Inspect Dryer\n3 - Inspect cleaning supplies\n4 - Leave laundry room\n5 - Inspect laundry room")
+    answer_l = input()
+    if answer_l==("1"):
+        print("Ah, this washer. A few years ago, you made the mistake of dumping an entire gallon of detergent in it because you thought it would make everything stay clean for a month. Well, it did, but it also covered the whole laundry room in lavender scented bubbles.")
+
 def ending():
     print("You have: ")
     for key in inventory:
